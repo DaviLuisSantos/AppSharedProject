@@ -9,9 +9,10 @@
     <Import_RootNamespace>AppSharedProject</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <Folder Include="$(MSBuildThisFileDirectory)DTOs\" />
-  </ItemGroup>
-  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)DTOs\CondominioCreateDTO.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DTOs\MoradorCreateDTO.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DTOs\MoradorFiltradoPorLiberacaoDTO.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DTOs\UnidadeCreateDTO.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\BaseEntity.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Firebird\CidEquipamento.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Firebird\CidUsuario.cs" />

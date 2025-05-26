@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
-using DataTransfer.DTO;
+using AppSharedProject.DTO;
 using MemoryPack;
 
 namespace AppSharedProject.Models.Sqlite;

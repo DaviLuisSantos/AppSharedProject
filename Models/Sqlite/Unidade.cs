@@ -1,4 +1,4 @@
-﻿using DataTransfer.DTO;
+﻿using AppSharedProject.DTO;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using MemoryPack;
