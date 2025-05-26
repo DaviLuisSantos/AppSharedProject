@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>089de1d2-2ba0-499b-be81-38e58f6d2370</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>AppSharedProject</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)DTOs\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Models\BaseEntity.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Firebird\CidEquipamento.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Firebird\CidUsuario.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Firebird\Condominio.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Firebird\Morador.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Firebird\Unidade.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Firebird\Visita.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Firebird\Visitante.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Sqlite\Condominio.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Sqlite\Morador.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Sqlite\Unidade.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Sqlite\Visita.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Sqlite\Visitante.cs" />
+  </ItemGroup>
+</Project>
