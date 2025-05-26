@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 
-namespace DataTransfer.Models.Firebird;
+namespace AppSharedProject.Models.Firebird;
 
 [Table("MORADORES")]
 public class Morador

@@ -1,4 +1,4 @@
-﻿namespace DataTransfer.Models;
+﻿namespace AppSharedProject.Models;
 
 public abstract class BaseEntity
 {

@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 using DataTransfer.DTO;
 using MemoryPack;
 
-namespace DataTransfer.Models.Sqlite;
+namespace AppSharedProject.Models.Sqlite;
 
 [MemoryPackable]
 public partial class Morador : BaseEntity

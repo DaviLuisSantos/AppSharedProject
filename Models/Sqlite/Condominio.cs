@@ -5,7 +5,7 @@ using System.Text.Json.Serialization;
 using DataTransfer.DTO;
 using MemoryPack;
 
-namespace DataTransfer.Models.Sqlite;
+namespace AppSharedProject.Models.Sqlite;
 
 [MemoryPackable]
 public partial class Condominio : BaseEntity

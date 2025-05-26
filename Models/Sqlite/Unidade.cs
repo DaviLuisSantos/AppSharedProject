@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using MemoryPack;
 
-namespace DataTransfer.Models.Sqlite;
+namespace AppSharedProject.Models.Sqlite;
 
 [MemoryPackable]
 public partial class Unidade : BaseEntity

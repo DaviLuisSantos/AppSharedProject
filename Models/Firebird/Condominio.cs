@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace DataTransfer.Models.Firebird;
+namespace AppSharedProject.Models.Firebird;
 
 [MemoryPackable]
 [Table("DADOS_CLIENTE")]

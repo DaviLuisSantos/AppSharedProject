@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace DataTransfer.Models.Firebird;
+namespace AppSharedProject.Models.Firebird;
 
 [Table("CAD_VISITA")]
 public class Visitante
