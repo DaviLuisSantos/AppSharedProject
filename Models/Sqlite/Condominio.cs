@@ -1,8 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
-using System.ComponentModel.DataAnnotations;
-using DataTransfer.Endpoints;
-using System.Text.Json.Serialization;
-using DataTransfer.DTO;
+﻿using System.ComponentModel.DataAnnotations;
+using AppSharedProject.DTO;
 using MemoryPack;
 
 namespace AppSharedProject.Models.Sqlite;

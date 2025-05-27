@@ -42,6 +42,7 @@ public class Morador
     [Column("AUTOARQUIVAMENTO")]
     public int? AutoArquivamento { get; set; }
 
+    public Morador() { }
     public Morador(Sqlite.Morador morador)
     {
         Nome = morador.Nome;

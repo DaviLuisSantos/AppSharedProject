@@ -28,6 +28,8 @@ public class CidUsuario
     [Column("CADASTRADO_POR")]
     public string? CadastradoPor { get; set; }
 
+    public CidUsuario() { }
+
     public CidUsuario(Morador morador)
     {
         TipoCadastro = "FACIAL";
