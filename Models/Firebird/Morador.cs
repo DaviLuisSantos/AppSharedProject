@@ -53,5 +53,18 @@ public class Morador
         Email = morador.Email;
         DataHoraCadastro = morador.CreatedAt;
         DataHoraAlteracao = morador.UpdatedAt;
+        AutoArquivamento = morador.Arquivamento ? 1 : 0;
+        ValidadeDataInicial = morador.DataInicio.HasValue && morador.DataInicio.Value != DateTime.MinValue
+        ? DateOnly.FromDateTime(morador.DataInicio.Value)
+        : null;
+        ValidadeHoraInicial = morador.DataInicio.HasValue && morador.DataInicio.Value != DateTime.MinValue
+            ? TimeOnly.FromDateTime(morador.DataInicio.Value)
+            : null;
+        ValidadeDatFinal = morador.DataFim.HasValue && morador.DataFim.Value != DateTime.MaxValue
+            ? DateOnly.FromDateTime(morador.DataFim.Value)
+            : null;
+        ValidadeHoraFinal = morador.DataFim.HasValue && morador.DataFim.Value != DateTime.MaxValue
+            ? TimeOnly.FromDateTime(morador.DataFim.Value)
+            : null;
     }
 }
