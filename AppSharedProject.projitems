@@ -10,6 +10,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)DTOs\CondominioCreateDTO.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DTOs\ControlId\Base.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DTOs\ControlId\DeleteUsuario.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DTOs\ControlId\Login.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DTOs\ControlId\Session.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DTOs\ControlId\UserAdd.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DTOs\ControlId\UserGoupAdd.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)DTOs\MoradorCreateDTO.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)DTOs\MoradorFiltradoPorLiberacaoDTO.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)DTOs\UnidadeCreateDTO.cs" />
