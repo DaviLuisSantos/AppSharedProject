@@ -34,5 +34,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)Models\Sqlite\User.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Sqlite\Visita.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Sqlite\Visitante.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utils\StringUtils.cs" />
   </ItemGroup>
 </Project>

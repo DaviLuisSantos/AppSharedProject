@@ -31,6 +31,12 @@ public class Visitante
     [Column("PLACA")]
     public string? Placa { get; set; }
 
+    [Column("CARRO_COR")]
+    public string? CarroCor { get; set; }
+
+    [Column("CARRO_MARCA")]
+    public string? CarroMarca { get; set; }
+
     [Column("FOTO1")]
     public string? Foto1 { get; set; }
 
