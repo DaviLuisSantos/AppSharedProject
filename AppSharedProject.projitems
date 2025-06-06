@@ -19,6 +19,10 @@
     <Compile Include="$(MSBuildThisFileDirectory)DTOs\MoradorCreateDTO.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)DTOs\MoradorFiltradoPorLiberacaoDTO.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)DTOs\UnidadeCreateDTO.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DTOs\UnidadeReturn.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DTOs\VisitanteCreateDTO.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DTOs\VisitanteFindByTermo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DTOs\VisitanteReturn.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\BaseEntity.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\ControlIdUsuario.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Firebird\CidEquipamento.cs" />
