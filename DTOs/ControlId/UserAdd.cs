@@ -1,15 +1,34 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Text.Json.Serialization;
 
 namespace AppSharedProject.DTO.ControlId
 {
-    class UserAdd(int id, string name, string registration, long begin_time, long end_time)
+    public class UserAdd
     {
-        public int id { get; set; } = id;
-        public string name { get; set; } = name;
-        public string registration { get; set; } = registration;
-        public long begin_time { get; set; } = begin_time;
-        public long end_time { get; set; } = end_time;
+        [JsonPropertyName("id")]
+        public int Id { get; set; }
+
+        [JsonPropertyName("name")]
+        public string Name { get; set; }
+
+        [JsonPropertyName("registration")]
+        public string Registration { get; set; }
+
+        [JsonPropertyName("begin_time")]
+        public long BeginTime { get; set; }
+
+        [JsonPropertyName("end_time")]
+        public long EndTime { get; set; }
+
+        public UserAdd(int id, string name, string registration, long beginTime, long endTime)
+        {
+            Id = id;
+            Name = name;
+            Registration = registration;
+            BeginTime = beginTime;
+            EndTime = endTime;
+        }
+
+        // Construtor padrão (opcional, para desserialização)
+        public UserAdd() { }
     }
 }
