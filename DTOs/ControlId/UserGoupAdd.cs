@@ -1,12 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Text.Json.Serialization;
 
 namespace AppSharedProject.DTO.ControlId
 {
-    class UserGoupAdd(int userId)
+    public class UserGroupAdd
     {
-        public int Group_id{ get; set; } = 1;
-        public int User_id { get; set; } = userId;
+        [JsonPropertyName("group_id")]
+        public int GroupId { get; set; } = 1;
+
+        [JsonPropertyName("user_id")]
+        public int UserId { get; set; }
+
+        public UserGroupAdd() { }
+
+        public UserGroupAdd(int userId)
+        {
+            UserId = userId;
+        }
     }
 }

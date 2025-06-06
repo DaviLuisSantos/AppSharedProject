@@ -1,13 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
+using System.Text.Json.Serialization;
 
 namespace AppSharedProject.DTO.ControlId
 {
-    class Base<T>(string objectName, List<T>? values = null, object? where = null)
+    public class Base<T>
     {
-        public string Object { get; set; } = objectName;
-        public List<T>? Values { get; set; } = values;
-        public object? Where { get; set; } = where;
+        [JsonPropertyName("object")]
+        public string Object { get; set; }
+
+        [JsonPropertyName("values")]
+        public List<T>? Values { get; set; }
+
+        [JsonPropertyName("where")]
+        public object? Where { get; set; }
+
+        public Base(string objectName, List<T>? values = null, object? where = null)
+        {
+            Object = objectName;
+            Values = values;
+            Where = where;
+        }
     }
 }
