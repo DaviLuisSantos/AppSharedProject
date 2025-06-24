@@ -5,7 +5,7 @@ using MemoryPack;
 namespace AppSharedProject.Models.Sqlite;
 
 [MemoryPackable]
-public partial class Condominio : IHasTimestamps
+public partial class Condominio : BaseEntity
 {
     [Key]
     public Guid Id { get; set; }
