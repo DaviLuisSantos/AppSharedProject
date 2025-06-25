@@ -10,6 +10,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)DTOs\CondominioCreateDTO.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DTOs\Condominio\RetrunCreate.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)DTOs\ControlId\Base.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)DTOs\ControlId\DeleteUsuario.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)DTOs\ControlId\Login.cs" />
