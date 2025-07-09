@@ -81,4 +81,22 @@ public class Visitante
 
     [Column("ULTIMO_ACESSO")]
     public DateTime? UltimoAcesso { get; set; }
+
+    public Visitante() { }
+
+    public Visitante(AppSharedProject.Models.Sqlite.Visitante visitante)
+    {
+        Nome = visitante.Nome;
+        Documento = visitante.Documento;
+        Empresa = visitante.Empresa;
+        Telefone = visitante.Telefone;
+        Email = visitante.Email;
+        Placa = visitante.Placa;
+        Foto1 = visitante.PathImage;
+        CorCarroVisita = visitante.CarroCor;
+        Observacao = visitante.Observacao;
+        Celular = visitante.Celular;
+        Cpf = visitante.Cpf;
+        DataCadastro = DateTime.Now;
+    }
 }

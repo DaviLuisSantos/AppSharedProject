@@ -12,6 +12,7 @@ public class Visitante : BaseEntity
     public string? Celular { get; set; }
     public string? Cpf { get; set; }
     public byte[]? Foto { get; set; }
+    public string? PathImage { get; set; }
     public string? Documento { get; set; }
     public string? Empresa { get; set; }
     public string? Telefone { get; set; }

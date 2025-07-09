@@ -30,10 +30,10 @@ public class CidUsuario
 
     public CidUsuario() { }
 
-    public CidUsuario(Morador morador)
+    public CidUsuario(int id)
     {
         TipoCadastro = "FACIAL";
-        IdUsuario = morador.Id;
+        IdUsuario = id;
         DataCadastro = DateTime.Now;
         CadastradoPor = "MORADOR";
     }

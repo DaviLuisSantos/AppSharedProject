@@ -13,6 +13,7 @@ public partial class Morador : BaseEntity
     [Required]
     public string Nome { get; set; }
     public byte[] Foto { get; set; }
+    public string? PathImage { get; set; }
     [ForeignKey("Unidade")]
     public Guid UnidadeId { get; set; }
     public Unidade Unidade { get; set; }
