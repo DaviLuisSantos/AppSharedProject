@@ -24,6 +24,7 @@ public partial class Morador : BaseEntity
     public bool Admin { get; set; }
     public StatusMorador Status { get; set; }
     public bool Arquivamento { get; set; }
+    public bool Enviado { get; set; } = false;
     public DateTime? DataInicio { get; set; }
     public DateTime? DataFim { get; set; }
     [MemoryPackIgnore]

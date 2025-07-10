@@ -21,6 +21,7 @@ public class Visitante : BaseEntity
     public string? CarroCor { get; set; }
     public string? CarroMarca { get; set; }
     public string? Observacao { get; set; }
+    public bool Enviado { get; set; } = false;
     public DateTime? DataInicio { get; set; }
     public DateTime? DataFim { get; set; }
 
